@@ -25,7 +25,7 @@ const voteModule = sdk.getVoteModule(
 
 const App = () => {
   // Use the connectWallet hook thirdweb gives us.
-  const { connectWallet, address, error, provider } = useWeb3();
+  const { connectWallet, address, provider } = useWeb3();
   console.log("👋 Address:", address);
 
   // The signer is required to sign transactions on the blockchain.
